@@ -7,13 +7,13 @@ public class REdemo
         String str= " the quick jdbc brown foxx jumps jdbc";
         Pattern p= Pattern.compile("jdbc");//pattern provided here
         Matcher m= p.matcher(str); //target string provided here
-        int ctr=0;
+        int c=0;
         while (m.find())
         {
             System.out.println(m.start() + "---------"+m.end()+ "---------"+ m.group());
-            ctr++;
+            c++;
         }
-        System.out.println("no of counts==" + ctr);
+        System.out.println("no of counts==" + c);
     }
 
 }
